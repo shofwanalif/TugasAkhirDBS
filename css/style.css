@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header .nav-container {
+  width: 90%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-block: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .nav-container .logo img {
+  width: 180px;
+}
+
+header .nav-container .nav-menu ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+}
+
+header .nav-container .nav-menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header .nav-container .nav-menu ul li a:hover {
+  color: #ffc94a;
+  transition: all 0.2s ease-in-out;
+}
+
+main .content-container {
+  width: 90%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-block: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  align-items: center;
+  gap: 3rem;
+  padding: 4rem 0 0 0;
+}
+
+main .content-container h1 {
+  color: #222163;
+  line-height: 2rem;
+}
+main .content-container img {
+  width: 400px;
+}
+
+.content-container .content-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.content-left p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.content-left .btn {
+  padding: 1rem 2rem;
+  width: fit-content;
+  background-color: #ffc94a;
+  border: none;
+  border-radius: 16px;
+  font-weight: bold;
+  color: #222163;
+}
+
+.content-left .btn:hover {
+  cursor: pointer;
+}
+
+.container-skill {
+  width: 90%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-block: 4rem;
+}
+
+.skill-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.skill-headerdesc {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  color: #222163;
+}
+
+.skill-headerdesc p {
+  width: 60%;
+  margin-inline: auto;
+}
+
+.skill-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.card-skill {
+  padding: 2rem;
+  max-width: 400px;
+  text-align: center;
+  color: #222163;
+}
+
+.card-skill:hover {
+  padding: 2rem;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0px 16px 40px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.card-skill img {
+  width: 64px;
+}
+
+.skill {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.skill-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: start;
+  width: 100px;
+}
+
+.skill-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100px;
+}
+
+.skill-icons .html {
+  width: 20px;
+}
+
+.skill-icons .css {
+  width: 20px;
+}
+
+.skill-icons .js {
+  width: 20px;
+}
+
+.skill-icons .photoshop {
+  width: 20px;
+}
+
+.skill-icons .illustrator {
+  width: 20px;
+}
+
+.skill-icons .figma {
+  width: 20px;
+}
+
+.container-project {
+  width: 90%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-block: 4rem;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.project-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+article .project-headerdesc {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  color: #222163;
+}
+
+article .project-headerdesc p {
+  width: 60%;
+  margin-inline: auto;
+}
+
+@media screen and (max-width: 768px) {
+  header .nav-container {
+    flex-direction: column;
+    column-gap: 2rem;
+  }
+
+  main .content-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .content-left .btn {
+    width: 100%;
+  }
+
+  main .skill-group {
+    flex-direction: column;
+  }
+
+  main .skill {
+    justify-content: space-between;
+  }
+
+  main .skill-headerdesc p {
+    width: 90%;
+  }
+
+  main .project-group {
+    flex-direction: column;
+  }
+
+  .project-content .project-headerdesc p {
+    width: 90%;
+  }
+}
