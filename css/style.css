@@ -88,7 +88,7 @@ main .content-container img {
   width: 90%;
   max-width: 1200px;
   margin-inline: auto;
-  padding-block: 4rem;
+  padding-block-start: 4rem;
 }
 
 .skill-content {
@@ -189,7 +189,7 @@ main .content-container img {
   width: 90%;
   max-width: 1200px;
   margin-inline: auto;
-  padding-block: 4rem;
+  padding-block-start: 4rem;
 }
 
 .project-content {
@@ -216,6 +216,130 @@ article .project-headerdesc {
 article .project-headerdesc p {
   width: 60%;
   margin-inline: auto;
+}
+
+.container-contact {
+  width: 90%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-block-start: 4rem;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.contact-headerdesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  color: #222163;
+  text-align: center;
+}
+
+.contact-headerdesc p {
+  width: 60%;
+  margin-inline: auto;
+}
+
+.contact-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-left {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  color: #222163;
+}
+
+.contact-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.conatct-detail p {
+  width: 80%;
+}
+
+.telepon {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.contact-right {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  color: white;
+  background-color: #222163;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.inputbox input {
+  width: 100%;
+  border: none;
+  padding: 4px 0;
+  background-color: #222163;
+  color: white;
+  border-bottom: 2px solid white;
+  font-size: 1rem;
+  font-weight: 400;
+  outline: none;
+}
+
+.inputbox label {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.inputbox textarea {
+  width: 100%;
+  border: none;
+  padding: none;
+  background-color: #222163;
+  color: white;
+  border-bottom: 2px solid white;
+  outline: none;
+  resize: none;
+}
+
+.inputboxsend {
+  width: 100%;
+  background-color: #ffc94a;
+  padding: 8px;
+  border-radius: 8px;
+  color: #222163;
+}
+
+.inputboxsend input {
+  width: 100%;
+  border: none;
+  color: #222163;
+  background-color: #ffc94a;
+}
+
+footer {
+  padding-block-start: 4rem;
+  padding-block-end: 2rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -250,6 +374,14 @@ article .project-headerdesc p {
   }
 
   .project-content .project-headerdesc p {
+    width: 90%;
+  }
+
+  main .contact-group {
+    flex-direction: column;
+  }
+
+  .container-contact .contact-headerdesc p {
     width: 90%;
   }
 }
